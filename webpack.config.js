@@ -34,7 +34,7 @@ module.exports = {
     },
     fallback: {
       fs: false,
-      path: false,
+      path: require.resolve("path-browserify"),
       crypto: false,
     },
   },

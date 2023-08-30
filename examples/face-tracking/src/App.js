@@ -1,7 +1,8 @@
-import { ARFaceMesh, ARView } from "react-three-mind";
+import { ARFaceMesh, ARView } from "./components/AR"
 
 function App() {
   return (
+    <>
     <ARView
       filterMinCF={1}
       filterBeta={10000}
@@ -14,6 +15,7 @@ function App() {
         <meshBasicMaterial color="hotpink" wireframe />
       </ARFaceMesh>
     </ARView>
+    </>
   );
 }
 
